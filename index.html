@@ -1,15 +1,21 @@
-<!DOCTYPE html><html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <script src="libraries/p5.js"></script>
-    <script src="libraries/p5.dom.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-    <script src="libraries/matter.js"></script>
-    <script src="libraries/p5.play.js"></script>
+    <meta charset="utf-8">
+    <title>MyQuiz Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="js/Quiz.js"></script>
+    <script src="js/Contestant.js"></script>
+    <script src="js/Question.js"></script>
 
+
+    
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -17,27 +23,20 @@
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyAwAKAuS3AbmYrhBgJsd6mgAHehMnN_Nww",
-    authDomain: "fruit-catcher-c-41-project.firebaseapp.com",
-    databaseURL: "https://fruit-catcher-c-41-project-default-rtdb.firebaseio.com",
-    projectId: "fruit-catcher-c-41-project",
-    storageBucket: "fruit-catcher-c-41-project.appspot.com",
-    messagingSenderId: "523453945617",
-    appId: "1:523453945617:web:3b20f175cac7fe02479eb0"
+    apiKey: "AIzaSyA-uNxpuNLmDl4t_c3bkN68JreHZMVXGWU",
+    authDomain: "my-quiz-game-53c31.firebaseapp.com",
+    projectId: "my-quiz-game-53c31",
+    storageBucket: "my-quiz-game-53c31.appspot.com",
+    messagingSenderId: "845377740470",
+    appId: "1:845377740470:web:ef8b38835dbb970974d017"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
 
-    <script src="js/Player.js"></script>
-    <script src="js/Form.js"></script>
-    <script src="js/Game.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
-
   <body>
     <script src="sketch.js"></script>
   </body>
-
 </html>
