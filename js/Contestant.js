@@ -1,8 +1,8 @@
 class Contestant{
     constructor(){
         this.name  = null;
-        answer = 0;
-        index = null;
+        this.answer = 0;
+        this.index = null;
     }
     getCount(){
         var contestantCountRef = database.ref('contestantCount');
@@ -16,10 +16,11 @@ class Contestant{
         })
     }
 
-    update(name){
+    update(name, answer){
         var contestantIndex= "player " +contestantCount;
         database.ref(contestantIndex).set({
-            name: this.name
+            name: this.name,
+            answer: this.answer
         })
     }
 }
