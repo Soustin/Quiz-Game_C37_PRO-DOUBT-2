@@ -36,7 +36,7 @@ class Quiz{
     play(){
 
         // var question = new Question();
-        question.display();
+        question.hide();
         background("pink");
         fill(0);
         textSize(30);
