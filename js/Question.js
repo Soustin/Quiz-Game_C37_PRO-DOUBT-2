@@ -4,7 +4,7 @@ class Question{
         this.button = createButton('Play');
         this.greeting = createElement('h2');
         this.title = createElement('h2');
-        this.title = createElement('h2');
+
         this.Q1 = createElement('h2');
         this.Q1o1 = createElement('Loki');
         this.Q1o2 = createElement('Hulk');
@@ -61,10 +61,10 @@ class Question{
     }
 
     hide(){
+        this.title.hide();
         this.greeting.hide();
         this.button.hide();
         this.input.hide();
-        this.title.hide();
     }
 
     display(){
@@ -74,6 +74,9 @@ class Question{
         // contestant.index();
         
         // if(gameState == 0){
+            this.title.html("My Marvel Quiz");
+            this.title.position(350, 50)
+
             this.input.position(350, 150);
             this.input.style('width', '200px');
             this.input.style('height', '20px');
@@ -84,67 +87,52 @@ class Question{
             this.button.style('height', '20px');
             this.button.style('background', 'lavender');
 
-            this.Q1.hide();
-            this.Q2.hide();
-            this.Q3.hide();
-            this.Q4.hide();
-            this.Q5.hide();
-            this.Q6.hide();
-            this.Q7.hide();
-            this.Q8.hide();
-            this.Q9.hide();
-            this.Q10.hide();
-            this.inputQ1.hide();
-            this.inputQ2.hide();
-            this.inputQ3.hide();
-            this.inputQ4.hide();
-            this.inputQ5.hide();
-            this.inputQ6.hide();
-            this.inputQ7.hide();
-            this.inputQ8.hide();
-            this.inputQ9.hide();
-            this.inputQ10.hide();
+            this.submit.position(350, 250);
+            this.submit.style('width', '200px');
+            this.submit.style('height', '20px');
+            this.submit.style('background', 'lavender');
 
-            this.Q1o1.hide();
-            this.Q1o2.hide();
-            this.Q2o1.hide();
-            this.Q2o2.hide();
-            this.Q3o1.hide();
-            this.Q3o2.hide();           
-            this.Q4o1.hide();
-            this.Q4o2.hide();
-            this.Q5o1.hide();
-            this.Q5o2.hide();
-            this.Q6o1.hide();
-            this.Q6o2.hide();
-            this.Q7o1.hide();
-            this.Q7o2.hide();
-            this.Q8o1.hide();
-            this.Q8o2.hide();
-            this.Q9o1.hide();
-            this.Q9o2.hide();
-            this.Q10o1.hide();
-            this.Q10o2.hide();
+            // this.Q1.hide();
+            // this.Q2.hide();
+            // this.Q3.hide();
+            // this.Q4.hide();
+            // this.Q5.hide();
+            // this.Q6.hide();
+            // this.Q7.hide();
+            // this.Q8.hide();
+            // this.Q9.hide();
+            // this.Q10.hide();
+            // this.inputQ1.hide();
+            // this.inputQ2.hide();
+            // this.inputQ3.hide();
+            // this.inputQ4.hide();
+            // this.inputQ5.hide();
+            // this.inputQ6.hide();
+            // this.inputQ7.hide();
+            // this.inputQ8.hide();
+            // this.inputQ9.hide();
+            // this.inputQ10.hide();
 
-
-            this.button.mousePressed(() => {
-                this.input.hide();
-                this.button.hide();
-                contestant.name = this.input.value();
-                contestantCount += 1;
-                contestant.index = contestantCount;
-                contestant.update();
-                contestant.updateCount(contestantCount);
-                this.greeting.html("Hello " + contestant.name)
-                this.greeting.position(300,50);
-                this.greeting.style('color', 'white');
-                this.greeting.style('font-size', '100px');
-                this.greeting.style('font-family', 'Aharoni');
-                if(contestantCount === 4){
-                    gameState = 1;
-                    gameState.update(1);
-                }
-            });
+            // this.Q1o1.hide();
+            // this.Q1o2.hide();
+            // this.Q2o1.hide();
+            // this.Q2o2.hide();
+            // this.Q3o1.hide();
+            // this.Q3o2.hide();           
+            // this.Q4o1.hide();
+            // this.Q4o2.hide();
+            // this.Q5o1.hide();
+            // this.Q5o2.hide();
+            // this.Q6o1.hide();
+            // this.Q6o2.hide();
+            // this.Q7o1.hide();
+            // this.Q7o2.hide();
+            // this.Q8o1.hide();
+            // this.Q8o2.hide();
+            // this.Q9o1.hide();
+            // this.Q9o2.hide();
+            // this.Q10o1.hide();
+            // this.Q10o2.hide();
         // }
 
         // if(gameState === 1){
@@ -154,12 +142,13 @@ class Question{
             this.Q1.style('font-family', 'Italics');
             this.Q1.style('font-size', '20px');
             this.Q1.style('color', 'red');
+
             this.inputQ1.position(375, 300);
 
-            contestant.answer = this.inputQ1.val();
+            // contestant.answer = this.inputQ1.val();
 
             this.Q1o1.html("(i) Loki")
-            this.Q1o1.position(65, 300);
+            this.Q1o1.position(65, 200);
             this.Q1o1.style('width', '200px');
             this.Q1o1.style('height', '40px');
             this.Q1o1.style('background', rgb(130, 0, 172));
@@ -442,6 +431,27 @@ class Question{
         //     this.Q10o2.visible = true;
             
         // }
+
+            this.button.mousePressed(() => {
+                this.title.hide();
+                this.input.hide();
+                // this.inputQ1.hide();
+                this.button.hide();
+                contestant.name = this.input.value();
+                contestantCount += 1;
+                contestant.index = contestantCount;
+                contestant.update();
+                contestant.updateCount(contestantCount);
+                this.greeting.html("Hello " + contestant.name)
+                this.greeting.position(300,50);
+                this.greeting.style('color', 'white');
+                this.greeting.style('font-size', '100px');
+                this.greeting.style('font-family', 'Aharoni');
+                // if(contestantCount === 4){
+                //     gameState = 1;
+                //     gameState.update(1);
+                // }
+            });
 
         }
     // }

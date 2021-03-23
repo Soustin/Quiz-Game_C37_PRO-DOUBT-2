@@ -1,4 +1,4 @@
-var canva;
+var canvas;
 var gameState = 0;
 var contestantCount,  contestant;
 var database;
@@ -17,6 +17,14 @@ function setup(){
 
 function draw(){
   background("pink");
+
+  if(contestantCount === 4){
+    quiz.update(1);
+  }
+  if(gameState === 1){
+    clear();
+    quiz.play();
+  }
 
   
 }

@@ -25,7 +25,7 @@ class Quiz{
                 contestant.getCount();
             }
             question = new Question();
-            question.display();
+            question.hide();
 
             // if(contestantCount === 4){
             //     gameState = 1
@@ -35,7 +35,31 @@ class Quiz{
 
     play(){
 
-        gameState = 1;
+        // var question = new Question();
+        question.display();
+        background("pink");
+        fill(0);
+        textSize(30);
+
+        Contestant.getPlayerInfo();
+    if(allContestants !== undefined){
+      var display_Answers = 230;
+      fill("Blue");
+      textSize(20);
+      text("*NOTE: Contestant who answered correct are highlighted in green color!",130,230);
+
+      for(var plr in allContestants){
+        var correctAns = "2";
+        if (correctAns === allContestants[plr].answer1)
+          fill("Green")
+        else
+          fill("red");
+
+        display_Answers+=30;
+        textSize(20);
+        text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
+      }
+    }
         
     }
 

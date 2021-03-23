@@ -16,11 +16,19 @@ class Contestant{
         })
     }
 
-    update(name, answer){
-        var contestantIndex= "player " +contestantCount;
+    update(){
+        var contestantIndex= "contestants/contestant " + this.index;
         database.ref(contestantIndex).set({
             name: this.name,
             answer: this.answer
+        });
+    }
+
+    static getPlayerInfo(){
+        var contestantInfoRef = database.ref('contestants');
+        contestantInfoRef.on("value", (data)=>{
+            allContestants = data.val();
         })
+
     }
 }
