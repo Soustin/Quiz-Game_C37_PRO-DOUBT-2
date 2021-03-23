@@ -10,50 +10,50 @@ class Question{
         this.Q1o2 = createElement('Hulk');
         this.inputQ1 = createInput("Your Answer");
         
-        this.Q2 = createElement('h2');
-        this.Q2o1 = createElement('h5');
-        this.Q2o2 = createElement('h5');
-        this.inputQ2 = createInput("Your Answer");
+        // this.Q2 = createElement('h2');
+        // this.Q2o1 = createElement('h5');
+        // this.Q2o2 = createElement('h5');
+        // this.inputQ2 = createInput("Your Answer");
         
-        this.Q3 = createElement('h2');
-        this.Q3o1 = createElement('h5');
-        this.Q3o2 = createElement('h5');
-        this.inputQ3 = createInput("Your Answer");
+        // this.Q3 = createElement('h2');
+        // this.Q3o1 = createElement('h5');
+        // this.Q3o2 = createElement('h5');
+        // this.inputQ3 = createInput("Your Answer");
         
-        this.Q4 = createElement('h2');
-        this.Q4o1 = createElement('h5');
-        this.Q4o2 = createElement('h5');
-        this.inputQ4 = createInput("Your Answer");
+        // this.Q4 = createElement('h2');
+        // this.Q4o1 = createElement('h5');
+        // this.Q4o2 = createElement('h5');
+        // this.inputQ4 = createInput("Your Answer");
         
-        this.Q5 = createElement('h2');
-        this.Q5o1 = createElement('h5');
-        this.Q5o2 = createElement('h5');
-        this.inputQ5 = createInput("Your Answer");
+        // this.Q5 = createElement('h2');
+        // this.Q5o1 = createElement('h5');
+        // this.Q5o2 = createElement('h5');
+        // this.inputQ5 = createInput("Your Answer");
 
-        this.Q6 = createElement('h2');
-        this.Q6o1 = createElement('h5');
-        this.Q6o2 = createElement('h5');
-        this.inputQ6 = createInput("Your Answer");
+        // this.Q6 = createElement('h2');
+        // this.Q6o1 = createElement('h5');
+        // this.Q6o2 = createElement('h5');
+        // this.inputQ6 = createInput("Your Answer");
 
-        this.Q7 = createElement('h2');
-        this.Q7o1 = createElement('h5');
-        this.Q7o2 = createElement('h5');
-        this.inputQ7 = createInput("Your Answer");
+        // this.Q7 = createElement('h2');
+        // this.Q7o1 = createElement('h5');
+        // this.Q7o2 = createElement('h5');
+        // this.inputQ7 = createInput("Your Answer");
 
-        this.Q8 = createElement('h2');
-        this.Q8o1 = createElement('h5');
-        this.Q8o2 = createElement('h5');
-        this.inputQ8 = createInput("Your Answer");
+        // this.Q8 = createElement('h2');
+        // this.Q8o1 = createElement('h5');
+        // this.Q8o2 = createElement('h5');
+        // this.inputQ8 = createInput("Your Answer");
         
-        this.Q9 = createElement('h2');
-        this.Q9o1 = createElement('h5');
-        this.Q9o2 = createElement('h5');
-        this.inputQ9 = createInput("Your Answer");
+        // this.Q9 = createElement('h2');
+        // this.Q9o1 = createElement('h5');
+        // this.Q9o2 = createElement('h5');
+        // this.inputQ9 = createInput("Your Answer");
 
-        this.Q10 = createElement('h2');
-        this.Q10o1 = createElement('h5');
-        this.Q10o2 = createElement('h5');
-        this.inputQ10 = createInput("Your Answer");
+        // this.Q10 = createElement('h2');
+        // this.Q10o1 = createElement('h5');
+        // this.Q10o2 = createElement('h5');
+        // this.inputQ10 = createInput("Your Answer");
 
         this.reset = createButton('Reset');
 
