@@ -17,7 +17,7 @@ class Contestant{
     }
 
     update(){
-        var contestantIndex= "contestants/contestant " + this.index;
+        var contestantIndex= "contestants/contestant" + this.index;
         database.ref(contestantIndex).set({
             name: this.name,
             answer: this.answer

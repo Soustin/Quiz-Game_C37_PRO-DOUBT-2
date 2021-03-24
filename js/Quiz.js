@@ -25,7 +25,7 @@ class Quiz{
                 contestant.getCount();
             }
             question = new Question();
-            question.hide();
+            question.display();
 
             // if(contestantCount === 4){
             //     gameState = 1
@@ -43,10 +43,12 @@ class Quiz{
 
         Contestant.getPlayerInfo();
     if(allContestants !== undefined){
-      var display_Answers = 230;
+      var display_Answers = 80;
+
       fill("Blue");
+      text("RESULT PAGE", 350, 30);
       textSize(20);
-      text("*NOTE: Contestant who answered correct are highlighted in green color!",130,230);
+      text("*NOTE: Contestant who answered correct are highlighted in green color!",80,50);
 
       for(var plr in allContestants){
         var correctAns = "2";
@@ -55,10 +57,15 @@ class Quiz{
         else
           fill("red");
 
-        display_Answers+=30;
+        display_Answers+=40;
         textSize(20);
-        text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
-      }
+        text(allContestants[plr].name + ": " + allContestants[plr].answer1, 350,display_Answers);
+        
+    }
+
+    //   if(question.submit.mousePressed()){
+    //       question.inputQ1 = allContestants[plr].answer1;
+    //   }
     }
         
     }

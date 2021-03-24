@@ -1,9 +1,10 @@
 var canvas;
 var gameState = 0;
-var contestantCount,  contestant;
+var contestantCount,  contestant, allContestants;
 var database;
 var quiz;
 var question;
+var marvelBg;
 
 function setup(){
   canvas = createCanvas(850,400);
@@ -12,6 +13,8 @@ function setup(){
   quiz = new Quiz();
   quiz.getState();
   quiz.start();
+
+  question = new Question();
 }
 
 
@@ -24,7 +27,12 @@ function draw(){
   if(gameState === 1){
     clear();
     quiz.play();
+    //question.display();
   }
 
+  //Ma'am this is how I did
+  // if(gameState === 2){
+  //   quiz.play();
+  // }
   
 }
